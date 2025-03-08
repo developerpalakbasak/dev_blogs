@@ -42,9 +42,27 @@ const Page = () => {
     }
   };
 
+    // Handle paste event to insert image
+    const onPasteHandler = (e) => {
+      const items = e.clipboardData.items;
+      // console.log(items)
+      for (const item of items) {
+        // console.log(item)
+        if (item.type.startsWith("image")) {
+          const file = item.getAsFile();
+          // console.log(file)
+          setImage(file);
+          return;
+        }
+
+
+      }
+    };
+
+
 
   return (
-    <>
+    <div onPaste={onPasteHandler}>
       <form ref={formRef} onSubmit={onSubmitHandler} className="pt-5 px-5 sm:pt-12 sm:pl-16">
         <p className="text-xl">Upload Thumbnail</p>
 
@@ -98,7 +116,7 @@ const Page = () => {
           Add Blog
         </button>
       </form>
-    </>
+    </div>
   );
 };
 
