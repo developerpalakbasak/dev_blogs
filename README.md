@@ -30,7 +30,6 @@ bun dev
 - I don't use any login function here anybody can delete others blog.
 - You can subscribe with your mail but you cannot delete your subscribed email
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
 ## Uses Techonology's
 
