@@ -30,7 +30,7 @@ const Sidebar = () => {
 
                     <p>Add Blogs</p>
                 </Link>
-                <Link href="/admin/blogList"  className={`flex items-center border border-black gap-3 font-medium px-3 py-2 bg-white ${path == "/admin/blogList"?"shadow-[-5px_5px_0px_#000000] ":""}`}>
+                <Link href="/admin/bloglist"  className={`flex items-center border border-black gap-3 font-medium px-3 py-2 bg-white ${path == "/admin/blogList"?"shadow-[-5px_5px_0px_#000000] ":""}`}>
                    
                    {/* blog icon  */}
 
